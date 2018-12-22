@@ -31,7 +31,7 @@ int main()
 	//socket Arguments: AF_INET = internet domain
 	//SOCK_STREAM = connection oriented TCP (not SOCK_DGRAM)
 	sock_CONNECTION = socket(AF_INET, SOCK_STREAM, NULL);
-	ADDRESS.sin_addr.s_addr = inet_addr("192.168.1.86");
+	ADDRESS.sin_addr.s_addr = inet_addr("192.168.1.86"); //This is my laptop's ip, change this to match your computer's ip
 	ADDRESS.sin_family = AF_INET;
 	ADDRESS.sin_port = htons(portNum); //port
 

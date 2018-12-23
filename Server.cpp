@@ -49,6 +49,7 @@ int main()
 
 			char msg[256] = "Welcome! You have connected to the file server!";
 			send(sock_CONNECTION, msg, sizeof(msg), NULL);
+			closesocket(sock_CONNECTION);
 		}
 	}
 

@@ -61,8 +61,7 @@ int main()
 		}
 		else if (response == "quit")
 		{
-			//left empty on purpose
-			//don't add anything here
+			closesocket(sock);
 		}
 		else
 		{

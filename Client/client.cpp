@@ -151,11 +151,14 @@ int main(int argc, char** argv) {
 
       if ((file = fopen(input, "r")) != NULL) {
         send(connfd, "1", MAXSIZE, 0);
+
         fseek(file, 0, SEEK_END);
         int size = ftell(file);
         rewind(file);
-        int fileSizeStart = size / MAXSIZE;
+
+        int fileSizeStart = 0;
         int fileSizeEnd = size % MAXSIZE;
+
         sprintf(charFileSizeStart, "%d", fileSizeStart);
         send(connfd, charFileSizeStart, MAXSIZE, 0);
 

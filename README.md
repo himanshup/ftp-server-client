@@ -10,7 +10,29 @@ Simple FTP server and client implementation in C++
 * Jeremy Gibbons - jeremymgibbons@gmail.com
 
 ### How to execute:
-To execute the program, open client.cpp and server.cpp consecutively in 2 terminal windows and compile and run them.
-Once they are running you enter IP address and port number in client window, and then same port number in server window to connect.
-Once the connection has established, you can use the ls command to see the files on server, and use get to download selected files.
-You can also upload a file to the server by using put command. Once you are done and want to end the connection, quit command will terminate the connection for you.
+
+To execute the program, open up two terminals, change directory to the Client folder in one of the terminals, and then change directory to the Server folder in the other terminal. Then enter the folllowing commands:  
+
+Server side:
+```
+g++ server.cpp -o server (if you need to compile)
+./server <port #>
+```
+
+Client side:  
+```
+g++ client.cpp -o client (if you need to compile)
+./client <ip address of server> <port #>
+```
+
+Commands for program:  
+```
+put <filename> (uploads file <file name> to the server)
+get <filename> (downloads file <file name> from the server)
+ls (lists files on the server)
+quit (disconnects from the server and exits)
+```
+
+### Comments
+* The get command will download the file from the server but the text in the file will be missing.
+* After entering the get command and downloading the file from the server, it won't let you enter any more commands after that (still trying to fix this, only happens with get command)

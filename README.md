@@ -6,6 +6,7 @@ Simple FTP server and client implementation in C++
 * Himanshu Patel - himanshup@csu.fullerton.edu
 * Justin Nhek - jnhek0@csu.fullerton.edu
 * Abdullah Zubair - malik@csu.fullerton.edu
+* Jeremy Gibbons - jeremymgibbons@csu.fullerton.edu
 ### How to execute:
 To execute the program, open client.cpp and server.cpp consecutively in 2 terminal windows and compile and run them.
 Once they are running you enter IP address and port number in client window, and then same port number in server window to connect.

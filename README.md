@@ -6,7 +6,7 @@ Simple FTP server and client implementation in C++
 * Himanshu Patel - himanshup@csu.fullerton.edu
 * Justin Nhek - jnhek0@csu.fullerton.edu
 * Abdullah Zubair - malik@csu.fullerton.edu
-* Wellson Pan - dihydrogenmonoxide1337@gmail.com
+* Wellson Pan - WellsonPan@csu.fullerton.edu
 * Jeremy Gibbons - jeremymgibbons@gmail.com
 
 ### How to execute:

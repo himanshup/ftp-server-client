@@ -32,7 +32,3 @@ get <filename> (downloads file <file name> from the server)
 ls (lists files on the server)
 quit (disconnects from the server and exits)
 ```
-
-### Comments
-* The get command will download the file from the server but the text in the file will be missing.
-* After entering the get command and downloading the file from the server, it won't let you enter any more commands after that (still trying to fix this, only happens with get command)
